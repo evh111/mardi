@@ -1,0 +1,46 @@
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+}
+
+.navbar-brand {
+  font-size: larger;
+}
+
+.container {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.navbar-custom {
+    font-family: 'Merriweather', serif;
+    font-size: 60px;
+}
+
+body {
+  color: black;
+  background-color: white;
+}
+
+.col-md-8 {
+  font-family: 'Lobster', cursive;
+  margin-left: 20px;
+}
+
+.date {
+    color: #828282;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.post {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}

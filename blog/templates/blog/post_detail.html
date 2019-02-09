@@ -1,0 +1,33 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+    <div class="post">
+
+        {% if user.is_authenticated %}
+
+        <a class="detail_edit" href="{% url 'post_edit' pk=post.pk %}">Edit</a>
+        <a class="detail_delete" href="{% url 'post_delete' pk=post.pk %}">Delete</a>
+
+        {% endif %}
+
+        <h1>{{ post.title }}</h1>
+
+        <p>{{ post.desc|wordwrap:50|linebreaksbr }}</p>
+
+        <p>{{ post.body|wordwrap:50|linebreaksbr }}</p>
+
+        <p>Link(s): {{ post.link|wordwrap:50|linebreaksbr }}</p>
+
+        {% if post.published_date %}
+
+            <div class="date">
+
+              {{ post.published_date }}
+            </div>
+
+        {% endif %}
+
+    </div>
+
+{% endblock %}
