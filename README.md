@@ -1,1 +1,1 @@
-Mardi test deployment
+Mardi - Blog application developed with Django 2.0.10
