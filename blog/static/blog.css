@@ -1,0 +1,144 @@
+/* General */
+
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  padding-top: 9px;
+  margin-left: 25px;
+  width: 1626px;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 39px;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+
+.navbar-brand {
+  font-size: 37px;
+}
+
+.navbar-custom {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+}
+
+/* Links */
+
+a:link {
+    text-decoration: black;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+/* Content */
+
+.container {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+body {
+  color: black;
+  background-color: #f2f2f2;
+}
+
+.post {
+  margin-top: 23px;
+  margin-bottom: 38px;
+  margin-left: 23px;
+}
+
+.date {
+  color: #828282;
+  margin-left: 2px;
+  padding-top: 15px;
+}
+
+/* Post detail */
+
+.detail_buttons {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left: 17px;
+}
+
+.detail_desc {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #686868;
+}
+
+.detail_body {
+  padding-bottom: 10px;
+}
+
+/* Login */
+
+.login_form {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 120%;
+}
+
+.login_button {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+/* Post edit */
+
+.post_edit_heading {
+  margin-top: 13px;
+  margin-bottom: 10px;
+  margin-left: 13px;
+}
+
+.title_form {
+  padding-top: 8px;
+  padding-right: 35px;
+  margin-left: 60px;
+  font-size: 160%;
+  width: 250%;
+}
+
+.desc_form {
+  padding-top: 8px;
+  padding-right: 60px;
+  margin-left: 60px;
+  font-size: 160%;
+  width: 500%;
+}
+
+.body_form {
+  padding-top: 8px;
+  padding-right: 60px;
+  margin-left: 60px;
+  font-size: 160%;
+  width: 500%;
+}
+
+.link_form {
+  padding-top: 8px;
+  padding-right: 60px;
+  margin-left: 60px;
+  font-size: 160%;
+  width: 500%;
+}
+
+.post_edit_button {
+  padding-top: 25px;
+  padding-bottom: 35px;
+  margin-left: 60px;
+}

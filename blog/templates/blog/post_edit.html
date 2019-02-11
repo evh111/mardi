@@ -1,14 +1,26 @@
 {% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
 
 {% block content %}
-
-  <h2>New post</h2>
-
-  <form method="POST" class="post-form">{% csrf_token %}
-    
-    {{ form.as_p }}
-
-    <button type="submit" class="save btn btn-default">Save</button>
-
+  <div class="post_edit_heading">
+    <h1>New/Edit post</h1>
+  </div>
+  <form method="POST" class="post-form">
+    {% csrf_token %}
+    <div class="title_form">
+      {{ form.title|as_crispy_field }}
+    </div>
+    <div class="desc_form">
+      {{ form.desc|as_crispy_field }}
+    </div>
+    <div class="body_form">
+      {{ form.body|as_crispy_field }}
+    </div>
+    <div class="link_form">
+      {{ form.link|as_crispy_field }}
+    </div>
+    <div class="post_edit_button">
+      <button type="submit" class="btn btn-info" value="save">Save</button>
+    </div>
   </form>
 {% endblock %}
