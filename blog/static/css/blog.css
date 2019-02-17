@@ -137,6 +137,11 @@ body {
   width: 500%;
 }
 
+.form_media {
+  margin-top: 25px;
+  margin-left: 70px;
+}
+
 .post_edit_button {
   padding-top: 25px;
   padding-bottom: 35px;

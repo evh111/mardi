@@ -5,7 +5,7 @@
   <div class="post_edit_heading">
     <h1>New/Edit post</h1>
   </div>
-  <form method="POST" class="post-form">
+  <form method="post" class="post-form" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="title_form">
       {{ form.title|as_crispy_field }}
@@ -15,10 +15,14 @@
     </div>
     <div class="body_form">
       {{ form.body|as_crispy_field }}
+      <div class="form_media">
+        {{ form.media }}
+      </div>
     </div>
     <div class="link_form">
       {{ form.link|as_crispy_field }}
     </div>
+
     <div class="post_edit_button">
       <button type="submit" class="btn btn-info" value="save">Save</button>
     </div>

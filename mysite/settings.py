@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blog',
     'crispy_forms',
     'octicons',
+    'markdownx',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Image uploads
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
