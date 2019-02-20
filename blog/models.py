@@ -2,6 +2,7 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 from markdownx.models import MarkdownxField
+from markdownx.utils import markdownify
 
 
 class Post(models.Model):
@@ -12,6 +13,10 @@ class Post(models.Model):
     link = models.TextField(default='For example: https://www.roblox.com/NewLogin')
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+
+    @property
+    def formatted_markdown(self):
+        return markdownify(self.body)
 
     def publish(self):
         self.published_date = timezone.now()

@@ -110,7 +110,7 @@ body {
   padding-top: 5px;
   padding-left: 60px;
   font-size: 160%;
-  width: 210%;
+  width: 100%;
 }
 
 .desc_form {
@@ -118,7 +118,7 @@ body {
   padding-right: 60px;
   padding-left: 60px;
   font-size: 160%;
-  width: 280%;
+  width: 100%;
 }
 
 .body_form {
@@ -126,7 +126,7 @@ body {
   padding-right: 60px;
   padding-left: 60px;
   font-size: 160%;
-  width: 280%;
+  width: 100%;
 }
 
 
@@ -136,11 +136,5 @@ body {
   padding-right: 60px;
   padding-left: 60px;
   font-size: 160%;
-  width: 280%;
-}
-
-.post_edit_button {
-  padding-top: 25px;
-  padding-bottom: 35px;
-  margin-left: 60px;
+  width: 100%;
 }

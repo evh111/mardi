@@ -2,46 +2,30 @@
 {% load octicons %}
 
 {% block content %}
-
     <div class="post">
-
         {% if user.is_authenticated %}
-
         {% endif %}
-
         <h1>{{ post.title }}:</h1>
-
         <div class="detail_desc">
           <p>{{ post.desc|wordwrap:200|linebreaksbr }}</p>
         </div>
-
         <div class="detail_body">
-          <p>{{ post.body|wordwrap:200|linebreaksbr }}</p>
+          <p>{{ post.formatted_markdown|safe|wordwrap:200|linebreaksbr }}</p>
         </div>
-
         <p>Link(s): {{ post.link|wordwrap:50|linebreaksbr }}</p>
-
         {% if user.is_authenticated %}
         <div class="detail_buttons">
           <a class="btn btn-lg" href="{% url 'post_edit' pk=post.pk %}">{% octicon "pencil" %}</a>
           <a class="btn btn-lg" href="{% url 'post_delete' pk=post.pk %}">{% octicon "trashcan" %}</a>
         </div>
         {% endif %}
-
         {% if post.published_date %}
-
             <div class="date">
-
               {{ post.published_date }}
             </div>
-
         <div class="image">
           <img src="{{ post.hotel_Main_Img.url }}" class="img-fluid" />
         </div>
-
-
         {% endif %}
-
     </div>
-
 {% endblock %}
