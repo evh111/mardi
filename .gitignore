@@ -3,6 +3,7 @@ __pycache__/
 /markdownx
 /media
 /db.sqlite3
+migrations/
 
 # IDE
 /.vscode
