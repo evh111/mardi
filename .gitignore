@@ -1,4 +1,8 @@
 # App
+__pycache__/
 /markdownx
 /media
 /db.sqlite3
+
+# IDE
+/.vscode
