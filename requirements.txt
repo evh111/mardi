@@ -1,4 +1,4 @@
-Django==2.1.7
+Django==2.2.10
 django-crispy-forms==1.7.2
 django-markdownx==2.0.28
 django-octicons==1.0.2
